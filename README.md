@@ -26,12 +26,13 @@ For all other users, simply drop the `screenspace.vim` file to your `plugin` dir
 
 ### `GUIHideAll` command
 
-
+![](https://user-images.githubusercontent.com/2071639/75458270-a2d02700-598e-11ea-990e-6054bb4aef70.png)
 
 ## Show all GUI options
 
 ### `GUIShowAll` command
 
+![](https://user-images.githubusercontent.com/2071639/75458283-a5cb1780-598e-11ea-9d22-e65d9aacfc2a.png)
 
 ## Hide and show menu options
 
@@ -45,18 +46,20 @@ For all other users, simply drop the `screenspace.vim` file to your `plugin` dir
 
 ### `ScreenSizeDOS` command
 
-Sets the screen columns=80 and lines=25.
+Sets the screen `columns=80` and `lines=25`.
 This is the screen size for DOS.
+
+![](https://user-images.githubusercontent.com/2071639/75458291-a8c60800-598e-11ea-95ba-90ee070713bc.png)
 
 
 ### `ScreenSizePlus` command
 
-Sets the screen columns=120 and lines=40.
+Sets the screen `columns=120` and `lines=40`.
 
 
 ### `ScreenSizeFull` command
 
-Sets the screen columns=9999 and lines=9999.
+Sets the screen `columns=9999` and `lines=9999`.
 This will use most of the screen.
 
 
@@ -81,24 +84,13 @@ set guioptions-=l  " left-hand scroll bar
 set guioptions+=b  " horizontal scrollbar
 ```
 
+http://vim.wikia.com/wiki/Hide_toolbar_or_menus_to_see_more_text
+
 
 
 # Options
 
 None, currently.
-
-
-
-# Related built-in features in Vim
-
-```viml
-set guioptions+=m  " Adds/Removes the menu
-set guioptions-=T  " Adds/Removes the toolbar
-set guioptions-=r  " Adds/Removes right-hand scroll bar
-set guioptions-=l  " Adds/Removes left-hand scroll bar
-```
-
-http://vim.wikia.com/wiki/Hide_toolbar_or_menus_to_see_more_text
 
 
 
