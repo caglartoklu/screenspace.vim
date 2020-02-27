@@ -1,4 +1,4 @@
-# screenspace
+# screenspace.vim
 
 Provides shortcut commands to hide or show GUI options and to set preset screen sizes.
 
@@ -6,6 +6,8 @@ I really like to use all of my screen.
 I also do like to take screenshots without visual clutter.
 As always, Vim provides lots of options to fine tune the screen.
 
+vim.org script page:
+https://www.vim.org/scripts/script.php?script_id=5858
 
 
 # Installation
