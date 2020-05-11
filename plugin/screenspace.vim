@@ -148,17 +148,17 @@ command! -nargs=0 SSpaceShowScrollBars :call screenspace#ShowScrollBars()
 function! screenspace#ScreenSizeDOS()
     set columns=80 lines=25
 endfunction
-command! -nargs=0 ScreenSizeDOS :call screenspace#ScreenSizeDOS()
+command! -nargs=0 SSpaceSizeDOS :call screenspace#ScreenSizeDOS()
 
 function! screenspace#ScreenSizePlus()
     set columns=120 lines=40
 endfunction
-command! -nargs=0 ScreenSizePlus :call screenspace#ScreenSizePlus()
+command! -nargs=0 SSpaceSizePlus :call screenspace#ScreenSizePlus()
 
 function! screenspace#ScreenSizeFull()
     set columns=9999 lines=9999
 endfunction
-command! -nargs=0 ScreenSizeFull :call screenspace#ScreenSizeFull()
+command! -nargs=0 SSpaceSizeFull :call screenspace#ScreenSizeFull()
 
 
 " Define the settings once.
