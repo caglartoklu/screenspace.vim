@@ -24,45 +24,47 @@ For all other users, simply drop the `screenspace.vim` file to your `plugin` dir
 
 # Usage
 
-## Hide all GUI options
-
-### `GUIHideAll` command
-
-![](https://user-images.githubusercontent.com/2071639/75458270-a2d02700-598e-11ea-990e-6054bb4aef70.png)
-
-## Show all GUI options
-
-### `GUIShowAll` command
-
-![](https://user-images.githubusercontent.com/2071639/75458283-a5cb1780-598e-11ea-9d22-e65d9aacfc2a.png)
-
-## Hide and show menu options
-
-### `GUIShowMenu` command
-
-### `GUIHideMenu` command
-
-
+All the commands start with **`SSpace`** prefix.
 
 ## Size Commands
 
-### `ScreenSizeDOS` command
 
+### `:SSpaceSizeDOS`
+  
 Sets the screen `columns=80` and `lines=25`.
 This is the screen size for DOS.
 
-![](https://user-images.githubusercontent.com/2071639/75458291-a8c60800-598e-11ea-95ba-90ee070713bc.png)
-
-
-### `ScreenSizePlus` command
+### `:SSpaceSizePlus`
 
 Sets the screen `columns=120` and `lines=40`.
 
-
-### `ScreenSizeFull` command
+### `:SSpaceSizeFull`
 
 Sets the screen `columns=9999` and `lines=9999`.
-This will use most of the screen.
+ This will use most of the screen.
+
+![](https://user-images.githubusercontent.com/2071639/81565986-e093f780-93a2-11ea-944a-e28e4a2bf60c.png)
+
+
+## GUI Options Commands
+
+### `:SSpaceHideAll`
+### `:SSpaceShowAll`
+### `:SSpaceHideMenu`
+### `:SSpaceShowMenu`
+### `:SSpaceHideToolbar`
+### `:SSpaceShowToolbar`
+### `:SSpaceHideRightHScrollBar`
+### `:SSpaceShowRightHScrollBar`
+### `:SSpaceHideLeftHScrollBar`
+### `:SSpaceShowLeftHScrollBar`
+### `:SSpaceHideBottomScrollBar`
+### `:SSpaceShowBottomScrollBar`
+### `:SSpaceHideScrollBars`
+### `:SSpaceShowScrollBars`
+
+![](https://user-images.githubusercontent.com/2071639/81565996-e38ee800-93a2-11ea-92dd-fce871200ec0.png)
+
 
 
 ## Calling screenspace.vim functions from VIMRC
