@@ -39,7 +39,8 @@ function! s:SetDefaultSettings()
 endfunction
 
 
-function! screenspace#GUIHideAll()
+" BEGIN all
+function! screenspace#HideAll()
     " set guioptions-=m  " menu
     " set guioptions-=T  " toolbar
     " set guioptions-=r  " right-hand scroll bar
@@ -47,35 +48,99 @@ function! screenspace#GUIHideAll()
     " set guioptions-=b  " horizontal scrollbar
     set guioptions=
 endfunction
-command! -nargs=0 GUIHideAll :call screenspace#GUIHideAll()
+command! -nargs=0 SSpaceHideAll :call screenspace#HideAll()
 
-
-function! screenspace#GUIShowAll()
+function! screenspace#ShowAll()
     set guioptions+=m  " menu
     set guioptions+=T  " toolbar
     set guioptions+=r  " right-hand scroll bar
     set guioptions-=l  " left-hand scroll bar
     set guioptions+=b  " horizontal scrollbar
 endfunction
-command! -nargs=0 GUIShowAll :call screenspace#GUIShowAll()
+command! -nargs=0 SSpaceShowAll :call screenspace#ShowAll()
+" END all
 
 
-function! screenspace#GUIHideMenu()
-    set guioptions-=m  " menu
+" BEGIN menu
+function! screenspace#HideMenu()
+    set guioptions-=m
 endfunction
-command! -nargs=0 GUIHideMenu :call screenspace#GUIHideMenu()
+command! -nargs=0 SSpaceHideMenu :call screenspace#HideMenu()
 
-
-function! screenspace#GUIShowMenu()
-    set guioptions+=m  " menu
+function! screenspace#ShowMenu()
+    set guioptions+=m
 endfunction
-command! -nargs=0 GUIShowMenu :call screenspace#GUIShowMenu()
+command! -nargs=0 SSpaceShowMenu :call screenspace#ShowMenu()
+" END menu
 
 
-" function! screenspace#GUIShowToolbar()
-"     set guioptions+=t  " toolbar
-" endfunction
-" command! -nargs=0 GUIShowToolbar :call screenspace#GUIShowToolbar()
+" BEGIN toolbar
+function! screenspace#HideToolbar()
+    set guioptions-=T
+endfunction
+command! -nargs=0 SSpaceHideToolbar :call screenspace#HideToolbar()
+
+function! screenspace#ShowToolbar()
+    set guioptions+=T
+endfunction
+command! -nargs=0 SSpaceShowToolbar :call screenspace#ShowToolbar()
+" END toolbar
+
+
+" BEGIN right-hand scroll bar
+function! screenspace#HideRightHScrollBar()
+    set guioptions-=r
+endfunction
+command! -nargs=0 SSpaceHideRightHScrollBar :call screenspace#HideRightHScrollBar()
+
+function! screenspace#ShowRightHScrollBar()
+    set guioptions+=r
+endfunction
+command! -nargs=0 SSpaceShowRightHScrollBar :call screenspace#ShowRightHScrollBar()
+" END right-hand scroll bar
+
+
+" BEGIN left-hand scroll bar
+function! screenspace#HideLeftHScrollBar()
+    set guioptions-=l
+endfunction
+command! -nargs=0 SSpaceHideLeftHScrollBar :call screenspace#HideLeftHScrollBar()
+
+function! screenspace#ShowLeftHScrollBar()
+    set guioptions+=l
+endfunction
+command! -nargs=0 SSpaceShowLeftHScrollBar :call screenspace#ShowLeftHScrollBar()
+" END left-hand scroll bar
+
+
+" BEGIN bottom scroll bar
+function! screenspace#HideBottomScrollBar()
+    set guioptions-=b
+endfunction
+command! -nargs=0 SSpaceHideBottomScrollBar :call screenspace#HideBottomScrollBar()
+
+function! screenspace#ShowBottomScrollBar()
+    set guioptions+=b
+endfunction
+command! -nargs=0 SSpaceShowBottomScrollBar :call screenspace#ShowBottomScrollBar()
+" END bottom scroll bar
+
+
+" BEGIN all scrollbars
+function! screenspace#HideScrollBars()
+    set guioptions-=b
+    set guioptions-=l
+    set guioptions-=r
+endfunction
+command! -nargs=0 SSpaceHideScrollBars :call screenspace#HideScrollBars()
+
+function! screenspace#ShowScrollBars()
+    set guioptions+=b
+    " set guioptions-=l " I don't like left scrollbar :)
+    set guioptions+=r
+endfunction
+command! -nargs=0 SSpaceShowScrollBars :call screenspace#ShowScrollBars()
+" END hide scrollbars
 
 
 " Preset screen size commands
