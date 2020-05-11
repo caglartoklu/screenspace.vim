@@ -5,6 +5,7 @@
 " HOMEPAGE: https://github.com/caglartoklu/screenspace.vim
 " LICENSE: https://github.com/caglartoklu/screenspace.vim/blob/master/LICENSE
 " AUTHOR: caglartoklu
+" https://www.vim.org/scripts/script.php?script_id=5858
 
 if exists('g:loaded_screenspace') || &cp
     " If it already loaded, do not load it again.
@@ -17,12 +18,7 @@ endif
 " set guioptions-=T  " Adds/Removes the toolbar
 " set guioptions-=r  " Adds/Removes right-hand scroll bar
 " set guioptions-=l  " Adds/Removes left-hand scroll bar
-"
-" " http://www.thisblog.runsfreesoftware.com/?q=Remove+scrollbars+from+Gvim
-" set guioptions+=LlRrb
-" set guioptions-=LlRrb
-"
-" set guioptions+=b " Adds/Removes the horizontal scrollbar
+" set guioptions+=b  " Adds/Removes the horizontal scrollbar
 
 
 " mark that plugin loaded
@@ -39,7 +35,7 @@ function! s:SetDefaultSettings()
 endfunction
 
 
-" BEGIN all
+" BEGIN hide/show all
 function! screenspace#HideAll()
     " set guioptions-=m  " menu
     " set guioptions-=T  " toolbar
@@ -58,7 +54,7 @@ function! screenspace#ShowAll()
     set guioptions+=b  " horizontal scrollbar
 endfunction
 command! -nargs=0 SSpaceShowAll :call screenspace#ShowAll()
-" END all
+" END hide/show all
 
 
 " BEGIN menu
@@ -143,8 +139,7 @@ command! -nargs=0 SSpaceShowScrollBars :call screenspace#ShowScrollBars()
 " END hide scrollbars
 
 
-" Preset screen size commands
-
+" BEGIN preset screen size commands
 function! screenspace#ScreenSizeDOS()
     set columns=80 lines=25
 endfunction
@@ -159,6 +154,7 @@ function! screenspace#ScreenSizeFull()
     set columns=9999 lines=9999
 endfunction
 command! -nargs=0 SSpaceSizeFull :call screenspace#ScreenSizeFull()
+" END preset screen size commands
 
 
 " Define the settings once.
